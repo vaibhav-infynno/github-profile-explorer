@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="description" content="GitHub Profile Explorer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>github-profiler-expolorer</title>
+    <title>GitHub Profile Explorer</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>
+    <header>
+      <h1>GitHub Profile Explorer</h1>
+    </header>
+    <main>
+      <section id="profile-search">
+        <h2>GitHub Profile Explorer</h2>
+        <form action="submit" id="profile-search-form">
+          <label for="search">GitHub Username</label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="search GitHub username"
+          />
+          <button type="submit" id="search-btn">search</button>
+        </form>
+      </section>
+      <section id="loading-section"></section>
+      <section id="error-section"></section>
+      <section id="profile-card-section"></section>
+      <section id="repository-section"></section>
+    </main>
   </body>
 </html>
