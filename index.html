@@ -7,29 +7,31 @@
     <title>GitHub Profile Explorer</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header>
+        <h1>GitHub Profile Explorer</h1>
+        <p>Search GitHub users and explore their public profile information.</p>
+      </header>
+      <main>
+        <div id="profile-search">
+          <h2>GitHub Profile Explorer</h2>
+          <form action="submit" id="profile-search-form">
+            <label for="search">GitHub Username</label>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="search GitHub username"
+            />
+            <button type="submit" id="search-btn">search</button>
+          </form>
+        </div>
+        <div id="loading-section"></div>
+        <div id="error-section"></div>
+        <div id="profile-card-section"></div>
+        <div id="repository-section"></div>
+      </main>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
-    <header>
-      <h1>GitHub Profile Explorer</h1>
-    </header>
-    <main>
-      <section id="profile-search">
-        <h2>GitHub Profile Explorer</h2>
-        <form action="submit" id="profile-search-form">
-          <label for="search">GitHub Username</label>
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="search GitHub username"
-          />
-          <button type="submit" id="search-btn">search</button>
-        </form>
-      </section>
-      <section id="loading-section"></section>
-      <section id="error-section"></section>
-      <section id="profile-card-section"></section>
-      <section id="repository-section"></section>
-    </main>
   </body>
 </html>
